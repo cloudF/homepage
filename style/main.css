@@ -55,10 +55,12 @@ nav a{
     color: #ffffff;
 }
 
+/*
+
 #banner .inner{
     max-width:300px;
     text-align: center;
-    margin:0 auto;/*0需要吗*/
+    margin:0 auto;!*0需要吗*!
     position: relative;
     top: 160px;
 }
@@ -66,7 +68,7 @@ nav a{
     font-size: 30px;
     margin: 0;
 }
-button{/*欢迎来到我的主页*/
+button{!*欢迎来到我的主页*!
     border: none;
     color: #eee;
     background: transparent;
@@ -81,10 +83,11 @@ button{/*欢迎来到我的主页*/
     display: block;
 }
 .sub-heading{
-    font-size: 18px;
+    font-size: 25px;
     line-height: 30px;
     margin:30px 0;
 }
+*/
 
 .logo{
     font-size: 20px;
@@ -97,7 +100,7 @@ button{/*欢迎来到我的主页*/
 nav .active{
     border-bottom: 4px solid #fff;
 }
-
+/*********************************/
 h1{
     padding:12px;
     border-top:2px solid #fff;
@@ -374,13 +377,34 @@ ul.share-group{
     padding: 20px 0;
     transition: all 0.3s;
 }
+#sidebar #headImg{
+    margin-top: 0;
+    width: 250px;
+    height: 200px;
+    padding: 40px;
+}
+#sidebar img{
+    display: block;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius:50px;
+    margin-bottom: 20px;
+}
+#sidebar #headImg >div{
+    margin-top: 30px;
+    display: inline-block;
+    background: #089db0;
+}
+
 #sidebar ul{
+    margin-top: 1px;
     list-style: none;
 }
 #sidebar ul a{
     color: #fff;
     width:100%;
-    padding:10px 30px;
+    padding:10px 40px;
     display: inline-block;
 }
 #sidebar ul a:hover{

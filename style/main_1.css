@@ -1,0 +1,258 @@
+.clearFix:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/*********<背景图片>***************************************************/
+
+.main-wrapper{
+    background: #444 url("../src/img/banner.jpg");
+    background-attachment: fixed;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center center;
+    /*overflow: hidden;*/
+
+}
+/************公用导航部分*************/
+#banner{
+    background: transparent;
+    height:350px;
+    /*color: #fff;*/
+}
+#banner .inner{
+    padding-top: 200px;
+    padding-left: 500px;
+}
+#banner .inner a{
+    color: #fff;
+    font:large "Adobe Garamond Pro Bold";
+}
+header{
+    background: rgba(0,0,0,0.3);
+}
+nav {
+    width: 100%;
+    background: transparent; /*透明显示背景图片*/
+    height: 50px;
+    position: fixed;/*是否固定*/
+}
+nav .logo{
+    float: left;
+    /*padding:10px;*/
+}
+nav ul{
+    list-style: none;
+    margin:0;
+    float: right;
+}
+nav ul li , nav .logo{
+    display: inline-block;
+    line-height: 50px;
+    margin-right: 20px;
+}
+nav a{
+    line-height: 50px;
+    display:inline-block;
+    margin-left: 10px;
+    height:inherit;
+    color: #ffffff;
+}
+.logo{
+    font-size: 20px;
+    font-weight:700;
+    letter-spacing: 1px;
+}
+.logo a{
+    color: #ffffff;
+}
+nav .active{
+    border-bottom: 4px solid #fff;
+}
+/******************主页总体部分******************/
+.index_main{
+    width: 1280px;
+    background: rgba(0,0,0,0.9);
+    margin:30px auto;
+}
+/*左边部分*/
+.index_left{
+    width: 68%;
+    height: inherit;
+    display: inline-block;
+    float: left;
+}
+/******对列表处理******************************/
+.media,
+.caption{
+    overflow: hidden;
+    zoom: 1;
+}
+.media div{
+    display: block;
+}
+.media{
+    margin-bottom: 20px;
+    background-color: rgba(0,0,0,0.50);
+    transition: background 0.3s;
+}
+.media:hover{
+    background: #333;
+}
+.media .object{
+    float: left;
+}
+.media .object img{
+    display: block;
+}
+.index_left .media .object{width: 350px;
+    height:240px;}
+.index_left .media .object img{width: 100%;
+    height:100%;}
+
+.media .caption{
+    padding: 15px;
+    margin:0;
+    height: auto;
+}
+
+.meta{
+    font-style: italic;
+    color: #aaa;
+    list-style: none;
+    padding: 10px 0;
+}
+.meta li{
+    display: inline;
+    margin-right: 10px;
+}
+.meta li a{
+    color: #8ed8d2;
+}
+.meta li a:hover{
+    color: #307b77;
+}
+.hr_small {
+    width: 30px;
+    height: 1px;
+    border-bottom: 1px #bbb solid;
+    margin: 10px 0 10px 0;
+    padding: 0;
+    display: block;
+    clear: both;
+}
+.media p{
+    margin: 10px auto 0 auto;
+    float: right;
+    color: #fff;
+}
+.media .button{
+    background-color: #333;
+    color: #d8d8d8;
+    padding: 3px;
+    font:13px/13px sans-serif;
+    transition: background-color 0.3s;
+}
+.media .button:hover{
+    background-color: #ff5500;
+}
+
+/*右边部分*/
+.index_right{
+    width: 28%;
+    height: inherit;
+    background: #0d6f7c;
+    display: inline-block;
+    float: right;
+}
+
+/********************公用页脚部分*********************/
+footer{
+    background-color: #333;
+    color: #fff;
+    min-height: 200px;
+    text-align: center;
+}
+ul.share-group{
+    display: block;
+    /*width: 1080px;*/
+    margin:0 auto;
+    padding:50px;
+}
+.share-group li{
+    display: inline-block;
+    padding: 10px;;
+}
+.share-group li a{
+    color: #fff;
+}
+.copy{
+    padding-bottom:30px;
+}
+
+/************侧边栏显示及阴影覆盖**********************/
+.mask{
+    display: none;
+    position: fixed;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    background: rgba(0,0,0,0.4);
+}
+
+#sidebar{
+    position: fixed;
+    top:0;
+    bottom:0;
+    /*right:-300px;*/
+    right:0;
+    transform: translate(300px, 0);
+    width:300px;
+    background: #333;
+    padding: 20px 0;
+    transition: all 0.3s;
+}
+#sidebar #headImg{
+    margin-top: 0;
+    width: 250px;
+    height: 200px;
+    padding: 40px;
+}
+#sidebar img{
+    display: block;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius:50px;
+    margin-bottom: 20px;
+}
+#sidebar #headImg >div{
+    margin-top: 30px;
+    display: inline-block;
+    background: #089db0;
+}
+
+#sidebar ul{
+    margin-top: 1px;
+    list-style: none;
+}
+#sidebar ul a{
+    color: #fff;
+    width:100%;
+    padding:10px 40px;
+    display: inline-block;
+}
+#sidebar ul a:hover{
+    background: #444;
+}
+/***********返回顶部按钮********************************/
+.back-to-top{
+    position: fixed;
+    bottom:30px;
+    right: 30px;
+    border:1px solid;
+    background: transparent;
+}
+/*****************************************/
